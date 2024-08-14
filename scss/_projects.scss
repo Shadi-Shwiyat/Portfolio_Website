@@ -1,7 +1,7 @@
 /* Projects Area css
 ============================================================================================ */
 .projects_area{
-	
+	margin: 0;
 }
 .projects_fillter{
 	.filter{
@@ -53,7 +53,7 @@
 		padding-left: 30px;
 		padding-right: 30px;
 		h4{
-			font-size: 21px;
+			font-size: 2px;
 			font-family: $hee;
 			font-weight: bold;
 			color: $dip;
@@ -65,6 +65,7 @@
 		p{
 			margin-bottom: 0px;
 			font-size: 14px;
+			color:aliceblue!important;
 		}
 	}
 	&:hover{

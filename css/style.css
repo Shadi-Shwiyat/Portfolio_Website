@@ -374,12 +374,12 @@ button:focus {
 .banner_area {
   position: relative;
   z-index: 1;
-  min-height: 430px; }
+  min-height: 260px; }
   .banner_area .banner_inner {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 430px;
+    min-height: 260px;
     background: #f9f9ff;
     z-index: 1; }
     .banner_area .banner_inner .banner_content {
@@ -2827,9 +2827,14 @@ h6 {
 /*----------------------------------------------------*/
 /* Projects Area css
 ============================================================================================ */
+.projects_area {
+  margin: 0;
+  padding: 3rem;
+}
+
 .projects_fillter .filter {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 0px;
   margin-bottom: 50px; }
   .projects_fillter .filter li {
     display: inline-block;
@@ -2842,6 +2847,10 @@ h6 {
       margin-right: 0px; }
     .projects_fillter .filter li.active a {
       color: #8490ff; }
+
+      .main_title {
+        margin-bottom: 30px;
+      }
 
 .projects_inner {
   margin-bottom: -30px; }
@@ -2866,7 +2875,8 @@ h6 {
     left: 0px;
     bottom: 30px;
     padding-left: 30px;
-    padding-right: 30px; }
+    padding-right: 30px;
+     }
     .projects_item .projects_text h4 {
       font-size: 21px;
       font-family: "Heebo", sans-serif;
@@ -2875,16 +2885,31 @@ h6 {
       margin-bottom: 5px;
       transition: all 300ms linear 0s;
       text-transform: uppercase;
-      cursor: pointer; }
+      cursor: pointer;
+    text-shadow: 
+          1px 1px 0px white, /* Bottom right shadow */
+          -1px -1px 0px white, /* Top left shadow */
+          -1px 1px 0px white, /* Bottom left shadow */
+          1px -1px 0px white; /* Top right shadow */ }
     .projects_item .projects_text p {
       margin-bottom: 0px;
-      font-size: 14px; }
+      font-size: 16px;
+      color: white; /* Text color */
+      text-shadow: 
+          1px 1px 0px black, /* Bottom right shadow */
+          -1px -1px 0px black, /* Top left shadow */
+          -1px 1px 0px black, /* Bottom left shadow */
+          1px -1px 0px black; /* Top right shadow */ }
   .projects_item:hover:before {
     opacity: 1; }
   .projects_item:hover .projects_text h4 {
+    text-shadow: none;
     background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+    .projects_item:hover .projects_text p {
+      text-shadow: none;
+      color: black; }
 
 /* End Projects Area css
 ============================================================================================ */
